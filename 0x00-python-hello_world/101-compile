@@ -1,0 +1,8 @@
+#!/bin/bash
+output_filename="main.pyc"
+python3 -m py_compile "main.py"
+if [[ $? -eq 0 ]]; then
+	echo "Compiling main.py ..."
+else
+	echo "Compilation failed."
+fi

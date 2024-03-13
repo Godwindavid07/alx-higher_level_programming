@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ -z "$PYCODE" ]; then
+	echo "Error: env variable not set"
+	exit 1
+fi
+python3 -c "$PYCODE"
