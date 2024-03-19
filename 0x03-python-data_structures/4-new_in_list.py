@@ -9,7 +9,9 @@ def new_in_list(my_list, idx, element):
     list: A new list with the replacement, or a copy of the original list
     if the index is invalid.
     """
-    if 0 <= idx < len(my_list):
+    if idx < 0:
+        return my_list
+    elif  idx >= len(my_list):
         return my_list
     new_list = list(my_list)
     new_list[idx] = element
